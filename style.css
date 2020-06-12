@@ -1,5 +1,6 @@
 * {
   cursor: url('./imgs/icons8-inactive-state-24.png'), auto;
+  margin: 0;
 }
 
 body, html {
@@ -18,11 +19,22 @@ body, html {
   }
 }
 
+@media only screen and (max-width: 760px) {
+  .logo {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .nav {
+    padding-left: 0px;
+  }
+}
+
 header {
   display: grid;
   grid-template-columns: 1fr 10fr 1fr;
-  background-color: #A6C3B5;
-  border-radius: 60px 60px 0 0;
+  background:linear-gradient( rgba(255,0,0,0), #A6C3B5)
 }
 
 .nav {
@@ -32,13 +44,11 @@ header {
 
 li {
   list-style-type: none;
-  font-family: 'Bungee Shade', cursive;
-  align-self: center;
-  font-size: 42px;
   color: rgb(194, 114, 24);
   margin: 5px;
   padding: 5px;
   transition: 1s linear;
+  align-self: center;
 }
 
 li:hover {
@@ -48,17 +58,21 @@ li:hover {
 }
 
 a {
+  font-family: 'Bungee Shade', cursive;
+  align-self: center;
+  font-size: 42px;
   text-decoration: none;
-  color:inherit;
+  color: inherit;
 }
 
 a:visited {
-  color:inherit;
+  color: inherit;
 }
 
 .logo {
   width: 8vw;
   height: auto;
+  align-self: center;
 }
 
 .logo:hover {
