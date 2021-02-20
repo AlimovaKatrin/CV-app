@@ -1,0 +1,9 @@
+.container{
+  display: flex;
+  flex-wrap: wrap;
+
+  div{
+    flex-basis: 30%;
+    margin: auto;
+  }
+}
