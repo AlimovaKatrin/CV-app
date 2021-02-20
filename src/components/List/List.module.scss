@@ -4,6 +4,12 @@
 
   div{
     flex-basis: 30%;
-    margin: auto;
+    margin: 1vh auto 1vh auto;
+    transition: all 1s linear;
   }
+
+  div:hover{
+    background-color: lightpink;
+  }
+
 }
