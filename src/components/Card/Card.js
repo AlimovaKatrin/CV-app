@@ -6,13 +6,14 @@ const Card = ( {elem} ) => {
               <h1>
                   Project name : {elem.name}
               </h1>
-              <div>
-                  <div>Accusamus, consequatur delectus dolorum ex non nostrum officia, quae
+              <img src='/img/zoombieland.png'/>
+              <article>
+                  <p>Accusamus, consequatur delectus dolorum ex non nostrum officia, quae
                       ratione sapiente soluta suscipit totam vero? Ad dolorem minima
                       necessitatibus, qui saepe tempora tempore velit! Accusamus iste minus
-                      officia tenetur voluptatum.</div>;
+                      officia tenetur voluptatum.</p>;
                   {elem.description}
-              </div>
+              </article>
           </div>
       </>
     );

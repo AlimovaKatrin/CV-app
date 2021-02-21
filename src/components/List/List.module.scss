@@ -1,15 +1,27 @@
-.container{
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.container {
+  width: 80vw;
+  margin: 1vh auto 1vh auto;
   display: flex;
   flex-wrap: wrap;
 
-  div{
+  div {
     flex-basis: 30%;
-    margin: 1vh auto 1vh auto;
-    transition: all 1s linear;
+    height: fit-content;
+    transition: all 0.8s ease-in-out;
+    flex-grow: 1;
   }
 
-  div:hover{
-    background-color: lightpink;
+  div:hover {
+    background-color: #d2eccc;
+    transform: scale(1.2);
   }
-
 }
