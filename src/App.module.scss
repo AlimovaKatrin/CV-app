@@ -1,4 +1,9 @@
 
-.app{
+.app {
+  position: relative;
   display: flex;
+}
+.contentContainer{
+  position: absolute;
+  left: 10vw
 }

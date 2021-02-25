@@ -1,5 +1,15 @@
-.navContainer{
+.navContainer {
+  position: fixed;
   display: flex;
   flex-direction: column;
-  margin: auto;
+  justify-content: center;
+  height: 100vh;
+  left: 0;
+}
+
+.navElement {
+  padding: 1vw;
+  flex-basis: 35%;
+  border: 1px solid black;
+  writing-mode: vertical-lr;
 }

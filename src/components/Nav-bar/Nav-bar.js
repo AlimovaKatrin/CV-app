@@ -2,17 +2,17 @@ import style from './Nav-bar.module.scss';
 
 function NavBar( props ) {
     return (
-      <nav className={style.navContainer}>
-          <div>
-              <button>Btm</button>
+      <div className={style.navContainer}>
+          <div className={style.navElement}>
+              Btm
           </div>
-          <div>
-              <button>BUTTON</button>
+          <div className={style.navElement}>
+              BUTTON
           </div>
-          <div>
-              <button>KNOPKA</button>
+          <div className={style.navElement}>
+              KNOPKA
           </div>
-      </nav>
+      </div>
     );
 }
 
