@@ -1,3 +1,9 @@
+@media only screen and (max-width: 600px) {
+  .navContainer {
+    width: 13vw;
+  }
+}
+
 .navContainer {
   position: fixed;
   left: 0;
@@ -11,7 +17,6 @@
     font-family: 'Akaya Telivigala', cursive;
     text-align: center;
     padding: 1vw;
-
     writing-mode: vertical-lr;
 
     strong {

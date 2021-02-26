@@ -7,6 +7,12 @@
   }
 }
 
+@media only screen and (max-width: 600px) {
+  img {
+    display: none;
+  }
+}
+
 .container {
   font-family: 'Akaya Telivigala', cursive;
   width: 80vw;
@@ -21,7 +27,7 @@
     transition: all 0.8s ease-in-out;
     flex-grow: 1;
 
-    img{
+    img {
       float: left;
     }
   }
