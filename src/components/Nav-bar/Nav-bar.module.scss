@@ -1,7 +1,7 @@
 .navContainer {
   position: fixed;
   left: 0;
-  top:0;
+  top: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -9,8 +9,28 @@
 }
 
 .navElement {
+  font-family: 'Akaya Telivigala', cursive;
+  text-align: center;
   padding: 1vw;
   flex-basis: 35%;
   border: 1px solid black;
   writing-mode: vertical-lr;
+
+  strong {
+    pointer-events: none;
+  }
+}
+
+.navActive {
+  font-family: 'Akaya Telivigala', cursive;
+  text-align: center;
+  padding: 1vw;
+  flex-basis: 35%;
+  border: 1px solid black;
+  writing-mode: vertical-lr;
+  background-color: aqua;
+
+  strong {
+    pointer-events: none;
+  }
 }
