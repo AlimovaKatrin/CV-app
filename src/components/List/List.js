@@ -6,7 +6,7 @@ const List = ( { list } ) => {
     return (
       <>
           <div className={style.container}>
-              {list.map(el => <Card elem={el}/>)}
+              {list.map((el,i) => <Card elem={el} index={i}/>)}
           </div>
       </>
     );

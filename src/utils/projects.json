@@ -1,22 +1,27 @@
 {
-  "projects": [
+  "projectsJSON": [
     {
+      "id": "1qwerhg332fds1",
       "name": "Zoombieland",
       "description": "Education project for students"
     },
     {
+      "id": "1qwerh333gfds1",
       "name": "Zoombieland",
       "description": "Education project for students"
     },
     {
+      "id": "1qwerhg3453534fds1",
       "name": "Zoombieland",
       "description": "Education project for students"
     },
     {
+      "id": "qwr564erhgfds1",
       "name": "Zoombieland",
       "description": "Education project for students"
     },
     {
+      "id": "2qwer2",
       "name": "Zoombieland",
       "description": "Education project for students"
     }

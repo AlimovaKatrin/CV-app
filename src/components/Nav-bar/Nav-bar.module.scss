@@ -6,31 +6,29 @@
   flex-direction: column;
   justify-content: center;
   height: 100vh;
+
+  div {
+    font-family: 'Akaya Telivigala', cursive;
+    text-align: center;
+    padding: 1vw;
+
+    writing-mode: vertical-lr;
+
+    strong {
+      pointer-events: none;
+    }
+
+  }
 }
 
 .navElement {
-  font-family: 'Akaya Telivigala', cursive;
-  text-align: center;
-  padding: 1vw;
   flex-basis: 35%;
-  border: 1px solid black;
-  writing-mode: vertical-lr;
-
-  strong {
-    pointer-events: none;
-  }
+  background-color: #e8cbc7;
+  transition: all 0.5s ease-in-out;
 }
 
 .navActive {
-  font-family: 'Akaya Telivigala', cursive;
-  text-align: center;
-  padding: 1vw;
-  flex-basis: 35%;
-  border: 1px solid black;
-  writing-mode: vertical-lr;
-  background-color: aqua;
-
-  strong {
-    pointer-events: none;
-  }
+  flex-basis: 45%;
+  background-color: #ec9586;
+  transition: all 0.5s ease-in-out;
 }

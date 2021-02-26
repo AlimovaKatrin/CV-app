@@ -20,10 +20,14 @@
     height: fit-content;
     transition: all 0.8s ease-in-out;
     flex-grow: 1;
+
+    img{
+      float: left;
+    }
   }
 
   div:hover {
-    background-color: #d2eccc;
+    background-color: #c5aaaa;
     transform: scale(1.1);
   }
 }

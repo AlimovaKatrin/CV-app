@@ -1,6 +1,6 @@
-import ProjectPage from './pages/Projects-page/Project-page';
 import NavBar from './components/Nav-bar/Nav-bar';
 import style from './App.module.scss';
+import Routing from './components/Router/Routing';
 
 function App () {
     return (
@@ -8,7 +8,7 @@ function App () {
             <div className={style.app}>
                 <NavBar/>
                 <div className={style.contentContainer}>
-                    <ProjectPage/>
+                    <Routing/>
                 </div>
             </div>
         </>

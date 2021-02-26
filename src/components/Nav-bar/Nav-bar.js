@@ -1,4 +1,5 @@
 import style from './Nav-bar.module.scss';
+import { navElemTransform } from '../../utils/helperFunc/navElem-transform';
 import { useLocation, useHistory } from 'react-router-dom';
 import { useEffect, useRef } from 'react';
 
@@ -11,31 +12,13 @@ function NavBar ( props ) {
     const contRef = useRef(null);
 
     useEffect(() => {
-        switch ( location.pathname ) {
-            case '/exp':
-                contRef.current.className = style.navElement;
-                projRef.current.className = style.navElement;
-                expRef.current.className = style.navActive;
-                break;
-            case '/proj':
-                contRef.current.className = style.navElement;
-                projRef.current.className = style.navActive;
-                expRef.current.className = style.navElement;
-                break;
-            case '/cont':
-                contRef.current.className = style.navActive;
-                projRef.current.className = style.navElement;
-                expRef.current.className = style.navElement;
-                break;
-            default:
-                console.log('no')
-        }
-    }, [ location ])
+        navElemTransform(location, expRef, projRef, contRef);
+    }, [ location ]);
 
     const navHandler = ( { target } ) => {
         const { link } = target.dataset;
-        history.push(link)
-    }
+        history.push(link);
+    };
 
     return (
         <div className={style.navContainer}>
