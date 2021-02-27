@@ -23,9 +23,10 @@ function NavBar ( props ) {
 
     return (
         <div ref={navBarRef} className={style.navContainer}>
-            {routes && routes.map(routeName => <NavElement style={style.navElement}
-                                                           route={routing[routeName]}
-                                                           navHandler={navHandler}/>)}
+            {/*array indexes acceptable if they are stable, in this case i am sure about that*/}
+            {routes && routes.map(( routeName, i ) => <NavElement key={i}
+                                                                  route={routing[routeName]}
+                                                                  navHandler={navHandler}/>)}
         </div>
     );
 }

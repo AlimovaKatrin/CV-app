@@ -4,20 +4,23 @@ const Card = ( { elem } ) => {
     return (
         <>
             <div className={style.cardBox}>
+                <div className={style.projectImg}>
+                    {elem.img && <img src={`/img${elem.img}`} alt={'project screenshots or logo'}/>}
+                </div>
                 <h1>
                     Project name : {elem.name}
                 </h1>
-                <img src='/img/zoombieland.png'/>
                 <article>
-                    <p>Accusamus, consequatur delectus dolorum ex non nostrum officia, quae
-                        ratione sapiente soluta suscipit totam vero? Ad dolorem minima
-                        necessitatibus, qui saepe tempora tempore velit! Accusamus iste minus
-                        officia tenetur voluptatum.</p>;
-                    {elem.description}
+                    <p>{elem.description}</p>
+
                 </article>
+                <span>
+                {elem.github && <a href={elem.github}><img src={'/img/github.svg'} alt={'chrome link'}/></a>}
+                    {elem.link && <a href={elem.link}><img src={'/img/chrome.svg'} alt={'chrome link'}/></a>}
+                </span>
             </div>
         </>
     );
-}
+};
 
 export default Card;

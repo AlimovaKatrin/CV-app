@@ -1,7 +1,7 @@
 
-function NavElement ( { style, route, navHandler } ) {
+function NavElement ( { route, navHandler } ) {
     return (
-        <div className={style} data-link={route.url} onClick={navHandler}>
+        <div data-link={route.url} onClick={navHandler}>
             <strong>{route.name}</strong>
         </div>
     );

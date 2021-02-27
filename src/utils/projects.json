@@ -1,28 +1,39 @@
 {
   "projectsJSON": [
     {
-      "id": "1qwerhg332fds1",
       "name": "Zoombieland",
+      "github": "github link",
+      "link": "deploy link",
+      "img": "/zoombieland.png",
+      "description": "Accusamus, consequatur delectus dolorum ex non nostrum officia, quaeratione sapiente soluta suscipit totam vero? Ad dolorem minimanecessitatibus, qui saepe tempora tempore velit! Accusamus iste minusofficia tenetur voluptatum."
+    },
+    {
+      "name": "VirusHack",
+      "github": "github link",
+      "link": null,
+      "img": null,
+      "description": "Accusamus, consequatur delectus dolorum ex non nostrum officia, quaeratione sapiente soluta suscipi"
+
+    },
+    {
+      "name": "Zoombieland",
+      "github": "github link",
+      "link": "deploy link",
+      "img": null,
       "description": "Education project for students"
     },
     {
-      "id": "1qwerh333gfds1",
       "name": "Zoombieland",
-      "description": "Education project for students"
+      "github": "github link",
+      "link": "deploy link",
+      "img": null,
+      "description": "Accusamus, consequatur delectus dolorum ex non nostrum officia, quaeratione sapiente soluta suscipit totam vero? Ad dolorem minimanecessitatibus, qui saepe tempora tempore velit! Accusamus iste minusofficia tenetur voluptatum."
     },
     {
-      "id": "1qwerhg3453534fds1",
       "name": "Zoombieland",
-      "description": "Education project for students"
-    },
-    {
-      "id": "qwr564erhgfds1",
-      "name": "Zoombieland",
-      "description": "Education project for students"
-    },
-    {
-      "id": "2qwer2",
-      "name": "Zoombieland",
+      "github": "github link",
+      "link": null,
+      "img": null,
       "description": "Education project for students"
     }
   ]
