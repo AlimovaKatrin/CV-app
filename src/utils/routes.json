@@ -1,0 +1,22 @@
+{
+  "welcome": {
+    "name": "WELCOME",
+    "url": "/welcome",
+    "description": "welcome page with explanations"
+  },
+  "experience": {
+    "name": "EXPERIENCE",
+    "url": "/experience",
+    "description": "experience description"
+  },
+  "projects": {
+    "name": "PROJECTS",
+    "url": "/projects",
+    "description": "projects examples"
+  },
+  "contacts": {
+    "name": "CONTACTS",
+    "url": "/contacts",
+    "description": "contacts information and FB form"
+  }
+}

@@ -1,18 +1,19 @@
 import style from './Nav-bar.module.scss';
+import routing from '../../utils/routes.json';
 import { navElemTransform } from '../../utils/helperFunc/navElem-transform';
 import { useLocation, useHistory } from 'react-router-dom';
 import { useEffect, useRef } from 'react';
+import NavElement from './Nav-element';
 
 function NavBar ( props ) {
     const location = useLocation();
     const history = useHistory();
+    const routes = Object.keys(routing);
 
-    const expRef = useRef(null);
-    const projRef = useRef(null);
-    const contRef = useRef(null);
+    const navBarRef = useRef(null);
 
     useEffect(() => {
-        navElemTransform(location, expRef, projRef, contRef);
+        navElemTransform(location, navBarRef.current);
     }, [ location ]);
 
     const navHandler = ( { target } ) => {
@@ -21,16 +22,10 @@ function NavBar ( props ) {
     };
 
     return (
-        <div className={style.navContainer}>
-            <div ref={expRef} className={style.navElement} data-link={'/exp'} onClick={navHandler}>
-                <strong>EXPERIENCE</strong>
-            </div>
-            <div ref={projRef} className={style.navElement} data-link={'/proj'} onClick={navHandler}>
-                <strong>PROJECTS</strong>
-            </div>
-            <div ref={contRef} className={style.navElement} data-link={'/cont'} onClick={navHandler}>
-                <strong>CONTACTS</strong>
-            </div>
+        <div ref={navBarRef} className={style.navContainer}>
+            {routes && routes.map(routeName => <NavElement style={style.navElement}
+                                                           route={routing[routeName]}
+                                                           navHandler={navHandler}/>)}
         </div>
     );
 }

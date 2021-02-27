@@ -1,4 +1,5 @@
 import { Switch, Route, Redirect } from 'react-router-dom';
+import routes from '../../utils/routes.json';
 import ProjectPage from '../../pages/Projects-page/Project-page';
 
 function Routing ( props ) {
@@ -8,16 +9,21 @@ function Routing ( props ) {
                 <Route exact path={'/'}>
                     <Redirect
                         to={{
-                            pathname: '/exp'
+                            pathname: routes.welcome.url
                         }}/>
                 </Route>
-                <Route path={'/exp'}>
+                <Route exact path={routes.welcome.url}>
+                    <p>
+                        welcome page
+                    </p>
+                </Route>
+                <Route path={routes.experience.url}>
                     <p>
                         nothing yet
                     </p>
                 </Route>
-                <Route path={'/proj'} component={ProjectPage}/>
-                <Route path={'/cont'}>
+                <Route path={routes.projects.url} component={ProjectPage}/>
+                <Route path={routes.experience.url}>
                     <p>
                         nothing too
                     </p>
