@@ -13,7 +13,7 @@
 
 
   div {
-    flex-basis: 25%;
+    flex-basis: 35%;
     height: fit-content;
     transition: all 0.8s ease-in-out;
     flex-grow: 1;
@@ -25,6 +25,7 @@
   }
 
   div:hover {
+    font-size: 20px;
     background-color: #e8cbc7;
     transform: scale(1.1);
   }

@@ -12,7 +12,9 @@ const Card = ( { elem } ) => {
                 </h1>
                 <article>
                     <p>{elem.description}</p>
-
+                </article>
+                <article>
+                    <p>{elem.techInfo}</p>
                 </article>
                 <span>
                 {elem.github && <a href={elem.github}><img src={'/img/github.svg'} alt={'chrome link'}/></a>}

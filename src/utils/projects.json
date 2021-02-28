@@ -2,39 +2,26 @@
   "projectsJSON": [
     {
       "name": "Zoombieland",
-      "github": "github link",
-      "link": "deploy link",
-      "img": "/zoombieland.png",
+      "github": "https://github.com/AlimovaKatrin/ZoombieLand",
+      "link": null,
+      "img": null,
       "description": "Accusamus, consequatur delectus dolorum ex non nostrum officia, quaeratione sapiente soluta suscipit totam vero? Ad dolorem minimanecessitatibus, qui saepe tempora tempore velit! Accusamus iste minusofficia tenetur voluptatum."
     },
     {
       "name": "VirusHack",
-      "github": "github link",
+      "github": "https://github.com/AlimovaKatrin/VirusHack",
       "link": null,
       "img": null,
-      "description": "Accusamus, consequatur delectus dolorum ex non nostrum officia, quaeratione sapiente soluta suscipi"
-
+      "description": "Caring for the critically ill in the digital city\nIDEA AND TARGET AUDIENCE:\nProvide a personalized service to help organize the care of critically ill people. The target audience of the application is close relatives or caregivers\n\nDECISION:\nThe solution is to combine in one place the whole complex of the needed information and support functionality to help in the care of critically ill people.",
+      "techInfo": "STACK: MongoDB, Exress, React(classes), Node "
     },
     {
-      "name": "Zoombieland",
-      "github": "github link",
-      "link": "deploy link",
-      "img": null,
-      "description": "Education project for students"
-    },
-    {
-      "name": "Zoombieland",
-      "github": "github link",
-      "link": "deploy link",
-      "img": null,
-      "description": "Accusamus, consequatur delectus dolorum ex non nostrum officia, quaeratione sapiente soluta suscipit totam vero? Ad dolorem minimanecessitatibus, qui saepe tempora tempore velit! Accusamus iste minusofficia tenetur voluptatum."
-    },
-    {
-      "name": "Zoombieland",
-      "github": "github link",
+      "name": "WeatherApp",
+      "github": "https://github.com/AlimovaKatrin/WeatherAPP",
       "link": null,
       "img": null,
-      "description": "Education project for students"
+      "description": "Weather App, where you can check weather forecast for week according to you current location or use search input",
+      "techInfo": "STACK: React(hooks), OpenWeatherAPI, SASS, Redux/saga as a state manager"
     }
   ]
 }
