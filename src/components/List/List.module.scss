@@ -1,32 +1,49 @@
-@media only screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
   img {
     display: none;
   }
-}
+  .container {
+    font-family: 'Akaya Telivigala', cursive;
+    width: 70vw;
+    margin: 3vh auto 3vh auto;
+    display: flex;
+    flex-direction: column;
 
-.container {
-  font-family: 'Akaya Telivigala', cursive;
-  width: 80vw;
-  margin: 3vh auto 3vh auto;
-  display: flex;
-  flex-wrap: wrap;
-
-
-  div {
-    flex-basis: 35%;
-    height: fit-content;
-    transition: all 0.8s ease-in-out;
-    flex-grow: 1;
-
-    img {
-      display: block;
-      margin: auto;
+    div {
+      flex-basis: 25%;
+      height: fit-content;
+      transition: all 0.8s ease-in-out;
+      flex-grow: 1;
     }
   }
 
-  div:hover {
-    font-size: 20px;
-    background-color: #e8cbc7;
-    transform: scale(1.1);
+}
+
+@media screen and (min-width: 600px) {
+  .container {
+    font-family: 'Akaya Telivigala', cursive;
+    width: 80vw;
+    margin: 3vh auto 3vh auto;
+    display: flex;
+    flex-wrap: wrap;
+
+
+    div {
+      flex-basis: 35%;
+      height: fit-content;
+      transition: all 0.8s ease-in-out;
+      flex-grow: 1;
+
+      img {
+        display: block;
+        margin: auto;
+      }
+    }
+
+    div:hover {
+      font-size: 20px;
+      background-color: #e8cbc7;
+      transform: scale(1.1);
+    }
   }
 }
