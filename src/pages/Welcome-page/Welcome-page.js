@@ -1,28 +1,28 @@
+import style from './Welcome.module.scss';
+import { useEffect } from 'react';
+
 function WelcomePage ( props ) {
+    const scrollHandler = (e) => {
+        console.log('scroll',e);
+    };
+
+    useEffect(() => {
+        window.addEventListener('scroll', scrollHandler);
+        return () => window.removeEventListener('scroll', scrollHandler);
+    }, []);
 
     return (
-        <div>
+        <div className={style.welcomeContainer}>
             <h1>Hey and Welcome</h1>
-            <p>
-                Ի՞նչ է Lorem Ipsum-ը
-                Lorem Ipsum-ը տպագրության և տպագրական արդյունաբերության համար նախատեսված մոդելային տեքստ է: Սկսած
-                1500-ականներից` Lorem Ipsum-ը հանդիսացել է տպագրական արդյունաբերության ստանդարտ մոդելային տեքստ, ինչը մի
-                անհայտ տպագրիչի կողմից տարբեր տառատեսակների օրինակների գիրք ստեղծելու ջանքերի արդյունք է: Այս տեքստը ոչ
-                միայն կարողացել է գոյատևել հինգ դարաշրջան, այլև ներառվել է էլեկտրոնային տպագրության մեջ` մնալով էապես
-                անփոփոխ: Այն հայտնի է դարձել 1960-ականներին Lorem Ipsum բովանդակող Letraset էջերի թողարկման արդյունքում,
-                իսկ ավելի ուշ համակարգչային տպագրության այնպիսի ծրագրերի թողարկման հետևանքով, ինչպիսին է Aldus
-                PageMaker-ը, որը ներառում է Lorem Ipsum-ի տարատեսակներ:
-            </p>
-            <p>
-                Ի՞նչ է Lorem Ipsum-ը
-                Lorem Ipsum-ը տպագրության և տպագրական արդյունաբերության համար նախատեսված մոդելային տեքստ է: Սկսած
-                1500-ականներից` Lorem Ipsum-ը հանդիսացել է տպագրական արդյունաբերության ստանդարտ մոդելային տեքստ, ինչը մի
-                անհայտ տպագրիչի կողմից տարբեր տառատեսակների օրինակների գիրք ստեղծելու ջանքերի արդյունք է: Այս տեքստը ոչ
-                միայն կարողացել է գոյատևել հինգ դարաշրջան, այլև ներառվել է էլեկտրոնային տպագրության մեջ` մնալով էապես
-                անփոփոխ: Այն հայտնի է դարձել 1960-ականներին Lorem Ipsum բովանդակող Letraset էջերի թողարկման արդյունքում,
-                իսկ ավելի ուշ համակարգչային տպագրության այնպիսի ծրագրերի թողարկման հետևանքով, ինչպիսին է Aldus
-                PageMaker-ը, որը ներառում է Lorem Ipsum-ի տարատեսակներ:
-            </p>
+            <div className={style.circleOne}>
+                My photo
+            </div>
+            <div className={style.circleTwo}>
+                my name is katrin
+            </div>
+            <div className={style.circleThree}>
+                this is my page
+            </div>
         </div>
     );
 }
