@@ -2,8 +2,12 @@ import style from './Welcome.module.scss';
 import { useEffect } from 'react';
 
 function WelcomePage ( props ) {
-    const scrollHandler = (e) => {
-        console.log('scroll',e);
+    let counter = 0;
+
+    const scrollHandler = () => {
+        console.log(window.screen.height);
+        console.dir(window.pageYOffset);
+        console.log('scroll');
     };
 
     useEffect(() => {
@@ -13,7 +17,6 @@ function WelcomePage ( props ) {
 
     return (
         <div className={style.welcomeContainer}>
-            <h1>Hey and Welcome</h1>
             <div className={style.circleOne}>
                 My photo
             </div>

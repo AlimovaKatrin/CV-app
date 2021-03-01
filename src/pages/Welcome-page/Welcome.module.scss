@@ -1,10 +1,10 @@
 @media only screen and (min-width: 600px) {
-  body {
-    //overflow: hidden;
+  body::-webkit-scrollbar {
+    display: none;
   }
   .welcomeContainer {
-    width: 1000px;
-    height: 2000px;
+    width: 10px;
+    height: 100000px;
     position: relative;
   }
   .circleOne {
