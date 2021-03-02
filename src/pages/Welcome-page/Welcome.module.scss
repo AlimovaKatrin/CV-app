@@ -10,12 +10,35 @@
   }
 }
 
-@media only screen and (min-width: 600px) {
-  body::-webkit-scrollbar {
-    display: none;
+@keyframes step {
+  0% {
+    opacity: 0;
   }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+
+  body {
+    ::-webkit-scrollbar {
+      display: none;
+    }
+  }
+  .step {
+    top: 0;
+    position: fixed;
+
+    img {
+      transform: rotate(170deg);
+      animation-name: step;
+      animation-duration: 4s;
+    }
+  }
+
   .welcomeContainer {
-    width: 1px;
+    width: 100vw;
     height: 3000px;
     position: relative;
   }
@@ -53,6 +76,7 @@
     right: 30%;
     animation-duration: 4s;
   }
+
 }
 
 @media only screen and (max-width: 600px) {

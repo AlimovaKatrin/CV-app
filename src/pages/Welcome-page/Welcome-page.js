@@ -5,6 +5,7 @@ function WelcomePage ( props ) {
     const [ scrollPosition, setScrollPosition ] = useState(window.pageYOffset);
 
     const scrollHandler = () => {
+        console.log(window.pageYOffset);
         setScrollPosition(() => window.pageYOffset);
     };
 
