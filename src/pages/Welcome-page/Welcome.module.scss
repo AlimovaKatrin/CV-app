@@ -1,10 +1,22 @@
+@keyframes appear {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 @media only screen and (min-width: 600px) {
   body::-webkit-scrollbar {
     display: none;
   }
   .welcomeContainer {
-    width: 10px;
-    height: 100000px;
+    width: 1px;
+    height: 3000px;
     position: relative;
   }
   .circleOne {
@@ -15,6 +27,9 @@
     position: fixed;
     top: 0;
     right: 0;
+    animation-name: appear;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
 
   }
 
@@ -26,6 +41,9 @@
     position: fixed;
     top: 35%;
     left: 10vw;
+    animation-name: appear;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
   }
 
   .circleThree {
@@ -37,6 +55,9 @@
     top: 70%;
     right: 30%;
     text-align: center;
+    animation-name: appear;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
   }
 
 }

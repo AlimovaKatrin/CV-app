@@ -1,12 +1,12 @@
 import style from './Welcome.module.scss';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 function WelcomePage ( props ) {
     let counter = 0;
-
+    const [ scrollPosition, setScrollPosition ] = useState(window.pageYOffset);
     const scrollHandler = () => {
-        console.log(window.screen.height);
-        console.dir(window.pageYOffset);
+        console.log(window.pageYOffset);
+        setScrollPosition(() => window.pageYOffset);
         console.log('scroll');
     };
 
@@ -17,15 +17,15 @@ function WelcomePage ( props ) {
 
     return (
         <div className={style.welcomeContainer}>
-            <div className={style.circleOne}>
+            {scrollPosition > 0 ? <div className={style.circleOne}>
                 My photo
-            </div>
-            <div className={style.circleTwo}>
+            </div> : null}
+            {scrollPosition > 1000 ? <div className={style.circleTwo}>
                 my name is katrin
-            </div>
-            <div className={style.circleThree}>
+            </div> : null}
+            {scrollPosition > 2000 ? <div className={style.circleThree}>
                 this is my page
-            </div>
+            </div> : null}
         </div>
     );
 }
