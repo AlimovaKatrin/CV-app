@@ -19,47 +19,40 @@
     height: 3000px;
     position: relative;
   }
-  .circleOne {
+
+  %circle {
+    border-radius: 50%;
+    background-color: #e8cbc7;
+    position: fixed;
+    animation-name: appear;
+    animation-iteration-count: infinite;
+  }
+  .one {
+    @extend %circle;
     width: 20vw;
     height: 20vw;
-    border-radius: 50%;
-    background-color: #e8cbc7;
-    position: fixed;
     top: 0;
     right: 0;
-    animation-name: appear;
     animation-duration: 4s;
-    animation-iteration-count: infinite;
-
   }
 
-  .circleTwo {
+  .two {
+    @extend %circle;
     width: 10vw;
     height: 10vw;
-    border-radius: 50%;
-    background-color: #e8cbc7;
-    position: fixed;
     top: 35%;
     left: 10vw;
-    animation-name: appear;
     animation-duration: 5s;
-    animation-iteration-count: infinite;
   }
 
-  .circleThree {
+  .three {
+    @extend %circle;
     width: 10vw;
     height: 10vw;
-    border-radius: 50%;
-    background-color: #e8cbc7;
-    position: fixed;
     top: 70%;
     right: 30%;
-    text-align: center;
-    animation-name: appear;
     animation-duration: 4s;
-    animation-iteration-count: infinite;
   }
-
 }
 
 @media only screen and (max-width: 600px) {
