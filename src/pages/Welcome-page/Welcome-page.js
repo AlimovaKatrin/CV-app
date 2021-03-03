@@ -19,29 +19,38 @@ function WelcomePage ( props ) {
 
             {scrollPosition > 0 ? <div className={style.blockOne}>
                 <div className={style.bubbleContainer}>
-                    <div>talkbuble</div>
+                    <div>
+                        <p>
+                            Hello and welcome,my name is Katrin
+                        </p>
+                    </div>
                 </div>
-                <div className={style.one}>photo</div>
+                <div className={style.one}></div>
             </div> : null}
             {scrollPosition > 1000 ?
                 <div className={style.blockTwo}>
                     <div className={style.two}>
-                        my name is katrin
                     </div>
                     <div className={style.bubbleContainer}>
-                        <div>talkbuble</div>
+                        <div>I am fullstack developer with frontend preferences</div>
                     </div>
                 </div> : null}
             {scrollPosition > 2000 ? <div className={style.blockThree}>
                 <div className={style.bubbleContainer}>
-                    <div>talkbuble</div>
+                    <div>
+                        <p>
+                            This is my CV page with information about my:
+                            <li> experience</li>
+                            <li> projects</li>
+                            <li> contacts</li>
+                        </p>
+                    </div>
                 </div>
                 <div className={style.three}>
-                    this is my page
                 </div>
             </div> : null}
         </div>
     );
-}
+};
 
 export default WelcomePage;

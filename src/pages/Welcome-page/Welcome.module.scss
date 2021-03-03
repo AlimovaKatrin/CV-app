@@ -33,16 +33,19 @@
   }
 
   .bubbleContainer {
-    display: inline-block;
 
     div {
-      width: 30vw;
-      height: 20vh;
-      background: red;
+
+      background: lightgrey;
       position: relative;
+      padding: 1vw;
       -moz-border-radius: 10px;
       -webkit-border-radius: 10px;
       border-radius: 10px;
+
+      p {
+        transform: rotate(180deg);
+      }
     }
 
     div:before {
@@ -53,7 +56,7 @@
       width: 0;
       height: 0;
       border-top: 13px solid transparent;
-      border-right: 26px solid red;
+      border-right: 26px solid lightgray;
       border-bottom: 13px solid transparent;
     }
   }
@@ -75,6 +78,11 @@
       transform: rotate(180deg);
       align-self: center;
       margin-right: 5vw;
+
+      div {
+        width: 30vw;
+        height: 14vh;
+      }
     }
 
     .one {
@@ -94,6 +102,11 @@
 
     .bubbleContainer {
       margin-left: 5vw;
+
+      div {
+        width: 30vw;
+        height: 10vh;
+      }
     }
 
     .two {
@@ -114,6 +127,11 @@
     .bubbleContainer {
       transform: rotate(180deg);
       margin-right: 5vw;
+
+      div {
+        width: 30vw;
+        height: 20vh;
+      }
     }
 
     .three {
