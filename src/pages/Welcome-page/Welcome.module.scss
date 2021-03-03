@@ -21,11 +21,10 @@
 
 @media only screen and (min-width: 600px) {
 
-  body {
-    ::-webkit-scrollbar {
+  body::-webkit-scrollbar {
       display: none;
     }
-  }
+
   .step {
     top: 0;
     position: fixed;
@@ -38,7 +37,7 @@
   }
 
   .welcomeContainer {
-    width: 100vw;
+    width: 80vw;
     height: 3000px;
     position: relative;
   }
@@ -50,6 +49,7 @@
     animation-name: appear;
     animation-iteration-count: infinite;
   }
+
   .one {
     @extend %circle;
     width: 20vw;
