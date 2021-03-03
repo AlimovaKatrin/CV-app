@@ -16,14 +16,29 @@ function WelcomePage ( props ) {
 
     return (
         <div className={style.welcomeContainer}>
-            {scrollPosition > 0 ? <div className={style.one}>
-                My photo
+
+            {scrollPosition > 0 ? <div className={style.blockOne}>
+                <div className={style.bubbleContainer}>
+                    <div>talkbuble</div>
+                </div>
+                <div className={style.one}>photo</div>
             </div> : null}
-            {scrollPosition > 1000 ? <div className={style.two}>
-                my name is katrin
-            </div> : null}
-            {scrollPosition > 2000 ? <div className={style.three}>
-                this is my page
+            {scrollPosition > 1000 ?
+                <div className={style.blockTwo}>
+                    <div className={style.two}>
+                        my name is katrin
+                    </div>
+                    <div className={style.bubbleContainer}>
+                        <div>talkbuble</div>
+                    </div>
+                </div> : null}
+            {scrollPosition > 2000 ? <div className={style.blockThree}>
+                <div className={style.bubbleContainer}>
+                    <div>talkbuble</div>
+                </div>
+                <div className={style.three}>
+                    this is my page
+                </div>
             </div> : null}
         </div>
     );
