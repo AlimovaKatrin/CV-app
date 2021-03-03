@@ -21,68 +21,132 @@
 
 @media only screen and (min-width: 600px) {
 
-  body {
-    ::-webkit-scrollbar {
-      display: none;
-    }
-  }
-  .step {
-    top: 0;
-    position: fixed;
-
-    img {
-      transform: rotate(170deg);
-      animation-name: step;
-      animation-duration: 4s;
-    }
-  }
-
-  .welcomeContainer {
-    width: 100vw;
-    height: 3000px;
-    position: relative;
+  body::-webkit-scrollbar {
+    display: none;
   }
 
   %circle {
     border-radius: 50%;
     background-color: #e8cbc7;
-    position: fixed;
     animation-name: appear;
     animation-iteration-count: infinite;
   }
-  .one {
-    @extend %circle;
-    width: 20vw;
-    height: 20vw;
+
+  .bubbleContainer {
+
+    div {
+
+      background: lightgrey;
+      position: relative;
+      padding: 1vw;
+      -moz-border-radius: 10px;
+      -webkit-border-radius: 10px;
+      border-radius: 10px;
+
+      p {
+        transform: rotate(180deg);
+      }
+    }
+
+    div:before {
+      content: "";
+      position: absolute;
+      right: 100%;
+      top: 26px;
+      width: 0;
+      height: 0;
+      border-top: 13px solid transparent;
+      border-right: 26px solid lightgray;
+      border-bottom: 13px solid transparent;
+    }
+  }
+
+  .welcomeContainer {
+    width: 80vw;
+    height: 3000px;
+    position: relative;
+  }
+
+  .blockOne {
+    position: fixed;
     top: 0;
     right: 0;
-    animation-duration: 4s;
+    display: flex;
+    align-items: center;
+
+    .bubbleContainer {
+      transform: rotate(180deg);
+      align-self: center;
+      margin-right: 5vw;
+
+      div {
+        width: 30vw;
+        height: 14vh;
+      }
+    }
+
+    .one {
+      @extend %circle;
+      width: 20vw;
+      height: 20vw;
+      animation-duration: 4s;
+    }
   }
 
-  .two {
-    @extend %circle;
-    width: 10vw;
-    height: 10vw;
-    top: 35%;
+  .blockTwo {
+    position: fixed;
+    top: 40%;
     left: 10vw;
-    animation-duration: 5s;
+    display: flex;
+    align-items: center;
+
+    .bubbleContainer {
+      margin-left: 5vw;
+
+      div {
+        width: 30vw;
+        height: 10vh;
+      }
+    }
+
+    .two {
+      @extend %circle;
+      width: 10vw;
+      height: 10vw;
+      animation-duration: 5s;
+    }
   }
 
-  .three {
-    @extend %circle;
-    width: 10vw;
-    height: 10vw;
+  .blockThree {
+    position: fixed;
     top: 70%;
-    right: 30%;
-    animation-duration: 4s;
+    right: 20%;
+    display: flex;
+    align-items: center;
+
+    .bubbleContainer {
+      transform: rotate(180deg);
+      margin-right: 5vw;
+
+      div {
+        width: 30vw;
+        height: 20vh;
+      }
+    }
+
+    .three {
+      @extend %circle;
+      width: 10vw;
+      height: 10vw;
+      animation-duration: 4s;
+    }
   }
+
 
 }
 
 @media only screen and (max-width: 600px) {
   .navContainer {
-    //width: 13vw;
-    //left: 0;
-    //top:0
+
   }
 }

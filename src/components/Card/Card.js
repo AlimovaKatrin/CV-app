@@ -5,7 +5,7 @@ const Card = ( { elem } ) => {
         <>
             <div className={style.cardBox}>
                 <div className={style.projectImg}>
-                    {elem.img && <img src={`/img${elem.img}`} alt={'project screenshots or logo'}/>}
+                    {elem.img && <img src={`${elem.img}`} alt={'project screenshots or logo'}/>}
                 </div>
                 <h1>
                     Project name : {elem.name}
@@ -17,8 +17,8 @@ const Card = ( { elem } ) => {
                     <p>{elem.techInfo}</p>
                 </article>
                 <span>
-                {elem.github && <a href={elem.github}><img src={'/img/github.svg'} alt={'chrome link'}/></a>}
-                    {elem.link && <a href={elem.link}><img src={'/img/chrome.svg'} alt={'chrome link'}/></a>}
+                {elem.github && <a href={elem.github}><img src={'/imgs/github.svg'} alt={'chrome link'}/></a>}
+                    {elem.link && <a href={elem.link}><img src={'/imgs/chrome.svg'} alt={'chrome link'}/></a>}
                 </span>
             </div>
         </>
