@@ -25,41 +25,7 @@
     display: none;
   }
 
-  %circle {
-    border-radius: 50%;
-    background-color: #e8cbc7;
-    animation-name: appear;
-    animation-iteration-count: infinite;
-  }
 
-  .bubbleContainer {
-
-    div {
-
-      background: lightgrey;
-      position: relative;
-      padding: 1vw;
-      -moz-border-radius: 10px;
-      -webkit-border-radius: 10px;
-      border-radius: 10px;
-
-      p {
-        transform: rotate(180deg);
-      }
-    }
-
-    div:before {
-      content: "";
-      position: absolute;
-      right: 100%;
-      top: 26px;
-      width: 0;
-      height: 0;
-      border-top: 13px solid transparent;
-      border-right: 26px solid lightgray;
-      border-bottom: 13px solid transparent;
-    }
-  }
 
   .welcomeContainer {
     width: 80vw;
@@ -85,12 +51,7 @@
       }
     }
 
-    .one {
-      @extend %circle;
-      width: 20vw;
-      height: 20vw;
-      animation-duration: 4s;
-    }
+
   }
 
   .blockTwo {
@@ -109,12 +70,6 @@
       }
     }
 
-    .two {
-      @extend %circle;
-      width: 10vw;
-      height: 10vw;
-      animation-duration: 5s;
-    }
   }
 
   .blockThree {
@@ -134,12 +89,6 @@
       }
     }
 
-    .three {
-      @extend %circle;
-      width: 10vw;
-      height: 10vw;
-      animation-duration: 4s;
-    }
   }
 
 

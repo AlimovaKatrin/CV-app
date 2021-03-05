@@ -1,0 +1,28 @@
+.bubbleContainer {
+
+  div {
+
+    background: lightgrey;
+    position: relative;
+    padding: 1vw;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+
+    p {
+      transform: rotate(180deg);
+    }
+  }
+
+  div:before {
+    content: "";
+    position: absolute;
+    right: 100%;
+    top: 26px;
+    width: 0;
+    height: 0;
+    border-top: 13px solid transparent;
+    border-right: 26px solid lightgray;
+    border-bottom: 13px solid transparent;
+  }
+}
