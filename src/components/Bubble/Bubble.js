@@ -1,9 +1,9 @@
 import style from './Bubble.module.scss';
 
-function Bubble ( { text, scrollPosition } ) {
+function Bubble ( { content } ) {
     return (
         <div className={style.bubbleContainer}>
-            <div>{text}</div>
+            <div>{content}</div>
         </div>
     );
 }

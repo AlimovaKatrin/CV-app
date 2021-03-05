@@ -1,7 +1,19 @@
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 %circle {
   border-radius: 50%;
   background-color: #e8cbc7;
-  animation-name: appear;
+  animation-name: pulse;
   animation-iteration-count: infinite;
 }
 

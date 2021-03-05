@@ -1,97 +1,14 @@
-@keyframes appear {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.2);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
-@keyframes step {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
 @media only screen and (min-width: 600px) {
 
   body::-webkit-scrollbar {
     display: none;
   }
 
-
-
   .welcomeContainer {
     width: 80vw;
-    height: 3000px;
+    height: 5000px;
     position: relative;
   }
-
-  .blockOne {
-    position: fixed;
-    top: 0;
-    right: 0;
-    display: flex;
-    align-items: center;
-
-    .bubbleContainer {
-      transform: rotate(180deg);
-      align-self: center;
-      margin-right: 5vw;
-
-      div {
-        width: 30vw;
-        height: 14vh;
-      }
-    }
-
-
-  }
-
-  .blockTwo {
-    position: fixed;
-    top: 40%;
-    left: 10vw;
-    display: flex;
-    align-items: center;
-
-    .bubbleContainer {
-      margin-left: 5vw;
-
-      div {
-        width: 30vw;
-        height: 10vh;
-      }
-    }
-
-  }
-
-  .blockThree {
-    position: fixed;
-    top: 70%;
-    right: 20%;
-    display: flex;
-    align-items: center;
-
-    .bubbleContainer {
-      transform: rotate(180deg);
-      margin-right: 5vw;
-
-      div {
-        width: 30vw;
-        height: 20vh;
-      }
-    }
-
-  }
-
-
 }
 
 @media only screen and (max-width: 600px) {

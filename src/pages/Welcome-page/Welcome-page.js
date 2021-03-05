@@ -20,13 +20,11 @@ function WelcomePage ( props ) {
             {welcomePage && welcomePage.map(( content, i ) => <InfoBlock
                 key={i}
                 content={content.text}
-                position={i}
+                position={i + 1}
                 scrollPosition={scrollPosition}
             />)}
         </div>
     );
-}
-
-;
+};
 
 export default WelcomePage;

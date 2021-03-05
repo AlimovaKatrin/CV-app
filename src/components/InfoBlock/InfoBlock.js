@@ -1,11 +1,17 @@
 import style from './InfoBlock.module.scss';
-import
-function InfoBlock ( props ) {
+import Bubble from '../Bubble/Bubble';
+import Circle from '../Circle/Circle';
+import numDict from '../../utils/dictionaries/numbers.json';
+
+function InfoBlock ( { scrollPosition, position, content } ) {
     return (
-        <div className={style.blockOne}>
-            <Bubble scrollPosition={scrollPosition} text={content.text}/>
-            <Circle scrollPosition={scrollPosition} position={i}/>
-        </div>
+        <>
+            {scrollPosition > (position * 500) ?
+                <div className={style[numDict[position]]}>
+                    <Bubble content={content}/>
+                    <Circle position={numDict[position]}/>
+                </div> : null}
+        </>
     );
 }
 

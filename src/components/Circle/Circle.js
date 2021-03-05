@@ -1,10 +1,9 @@
 import style from './Circle.module.scss';
 
-const { one, two, three } = style;
-
-function Circle ( {n} ) {
+function Circle ( { position } ) {
     return (
-        <div className={style[n]}></div>
+        <div className={style[position]}>
+        </div>
     );
 }
 
