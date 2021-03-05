@@ -1,38 +1,13 @@
-@media screen and (max-width: 600px) {
-  img {
-    display: none;
-  }
+@media screen and (min-width: 780px) {
   .container {
-    font-family: 'Akaya Telivigala', cursive;
-    width: 70vw;
-    margin: 3vh auto 3vh auto;
-    display: flex;
-    flex-direction: column;
-
-    div {
-      flex-basis: 25%;
-      height: fit-content;
-      transition: all 0.8s ease-in-out;
-      flex-grow: 1;
-    }
-  }
-
-}
-
-@media screen and (min-width: 600px) {
-  .container {
-    font-family: 'Akaya Telivigala', cursive;
     width: 80vw;
     margin: 3vh auto 3vh auto;
     display: flex;
-    flex-wrap: wrap;
-
 
     div {
-      flex-basis: 35%;
-      height: fit-content;
-      transition: all 0.8s ease-in-out;
-      flex-grow: 1;
+      font-size: 20px;
+      flex-basis: 30%;
+      transition: all 1s ease-in-out;
 
       img {
         display: block;
@@ -41,9 +16,25 @@
     }
 
     div:hover {
-      font-size: 20px;
       background-color: #e8cbc7;
       transform: scale(1.1);
+    }
+  }
+}
+
+@media screen and (max-width: 780px) {
+  img {
+    display: none;
+  }
+
+  .container {
+
+    display: flex;
+    flex-direction: column;
+
+    div {
+      flex-basis: 25%;
+      transition: all 0.8s ease-in-out;
     }
   }
 }

@@ -1,10 +1,22 @@
-
 .app {
-  font-family: 'Akaya Telivigala', cursive;
+  font-family: 'Montserrat', sans-serif;
   position: relative;
   display: flex;
 }
-.contentContainer{
+
+.contentContainer {
   position: absolute;
-  left: 10vw
+  left: 10vw;
+}
+
+@media screen and (min-width: 780px) {
+  .contentContainer {
+    top: 10vh;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .contentContainer {
+    top: 5vh;
+  }
 }
