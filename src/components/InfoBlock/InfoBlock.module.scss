@@ -1,0 +1,57 @@
+@media only screen and (min-width: 600px) {
+  .one {
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+
+    //.bubbleContainer {
+    //  transform: rotate(180deg);
+    //  align-self: center;
+    //  margin-right: 5vw;
+    //
+    //  div {
+    //    width: 30vw;
+    //    height: 14vh;
+    //  }
+    //}
+  }
+
+
+  .two {
+    position: fixed;
+    top: 40%;
+    left: 10vw;
+    display: flex;
+    align-items: center;
+
+    .bubbleContainer {
+      margin-left: 5vw;
+
+      div {
+        width: 30vw;
+        height: 10vh;
+      }
+    }
+
+  }
+
+  .three {
+    position: fixed;
+    top: 70%;
+    right: 20%;
+    display: flex;
+    align-items: center;
+
+    .bubbleContainer {
+      transform: rotate(180deg);
+      margin-right: 5vw;
+
+      div {
+        width: 30vw;
+        height: 20vh;
+      }
+    }
+  }
+}
