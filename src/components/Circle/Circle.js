@@ -1,8 +1,9 @@
 import style from './Circle.module.scss';
 
-function Circle ( { position } ) {
+function Circle ( { position, imgPath } ) {
     return (
         <div className={style[position]}>
+            <img src={`/imgs/${imgPath}`}/>
         </div>
     );
 }

@@ -4,6 +4,7 @@ import { welcomePage } from '../../utils/content.json';
 import InfoBlock from '../../components/InfoBlock/InfoBlock';
 
 function WelcomePage ( props ) {
+    const circleImages = [ 'avatar.svg', 'javascript-logo.svg', 'welcome.svg' ];
     const [ scrollPosition, setScrollPosition ] = useState(window.pageYOffset);
 
     const scrollHandler = () => {
@@ -22,6 +23,7 @@ function WelcomePage ( props ) {
                 content={content.text}
                 position={i + 1}
                 scrollPosition={scrollPosition}
+                imgPath={circleImages[i]}
             />)}
         </div>
     );

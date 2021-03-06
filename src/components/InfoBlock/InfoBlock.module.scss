@@ -1,57 +1,36 @@
 @media only screen and (min-width: 600px) {
-  .one {
+  %block {
     position: fixed;
-    top: 0;
-    right: 0;
     display: flex;
-    align-items: center;
-
-    //.bubbleContainer {
-    //  transform: rotate(180deg);
-    //  align-self: center;
-    //  margin-right: 5vw;
-    //
-    //  div {
-    //    width: 30vw;
-    //    height: 14vh;
-    //  }
-    //}
   }
 
+  .one {
+    @extend %block;
+    top: 0;
+    right: 10vw;
+  }
 
   .two {
-    position: fixed;
-    top: 40%;
+    @extend %block;
+    top: 30vh;
     left: 10vw;
-    display: flex;
-    align-items: center;
-
-    .bubbleContainer {
-      margin-left: 5vw;
-
-      div {
-        width: 30vw;
-        height: 10vh;
-      }
-    }
-
   }
 
   .three {
-    position: fixed;
-    top: 70%;
-    right: 20%;
+    @extend %block;
+    top: 60vh;
+    right: 25vw;
+  }
+
+  .wraper {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    pointer-events: none;
 
-    .bubbleContainer {
-      transform: rotate(180deg);
-      margin-right: 5vw;
-
-      div {
-        width: 30vw;
-        height: 20vh;
-      }
+    .fakeElem {
+      width: 5vw;
+      height: 20vh;
     }
   }
+
 }
