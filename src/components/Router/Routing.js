@@ -2,6 +2,7 @@ import { Switch, Route, Redirect } from 'react-router-dom';
 import routes from '../../utils/routes.json';
 import ProjectPage from '../../pages/Projects-page/Project-page';
 import WelcomePage from '../../pages/Welcome-page/Welcome-page';
+import ExperiencePage from '../../pages/Experience-page/Experience-page';
 
 function Routing ( props ) {
     return (
@@ -15,9 +16,7 @@ function Routing ( props ) {
                 </Route>
                 <Route exact path={routes.welcome.url} component={WelcomePage}/>
                 <Route path={routes.experience.url}>
-                    <p>
-                        nothing yet
-                    </p>
+                   <ExperiencePage/>
                 </Route>
                 <Route path={routes.projects.url} component={ProjectPage}/>
                 <Route path={routes.experience.url}>
