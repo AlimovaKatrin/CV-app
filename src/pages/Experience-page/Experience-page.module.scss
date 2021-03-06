@@ -1,0 +1,24 @@
+.companyCard {
+  font-size: 24px;
+
+  h1 {
+    font-family: 'Bebas Neue', cursive;
+  }
+}
+
+.experienceList {
+  li {
+    list-style: url("briefcase.svg");
+  }
+}
+
+@media screen and (min-width: 1070px) {
+  .experienceList {
+    max-width: 30vw;
+    max-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+}
