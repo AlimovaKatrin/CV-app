@@ -1,24 +1,28 @@
-.bubbleContainer {
-  margin-right: 1.5vw;
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 
-  div {
-    background: lightgrey;
-    position: relative;
-    padding: 1vw;
-    -moz-border-radius: 10px;
-    -webkit-border-radius: 10px;
-    border-radius: 10px;
+.bubbleContainer {
+  align-self: flex-start;
+  position: relative;
+  text-align: center;
+  animation-name: appear;
+  animation-duration: 2s;
+
+  img {
+    width: 100%;
+    transform: rotateY(180deg);
   }
 
-  div:before {
-    content: "";
+  div {
     position: absolute;
-    transform: rotate(180deg);
-    left: 99%;
-    width: 0;
-    height: 0;
-    border-top: 2vh solid transparent;
-    border-right: 4vh solid lightgray;
-    border-bottom: 2vh solid transparent;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 }
