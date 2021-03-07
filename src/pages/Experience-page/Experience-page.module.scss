@@ -9,6 +9,16 @@
 .experienceList {
   li {
     list-style: url("briefcase.svg");
+    margin-right: 4vw;
+  }
+
+  .dates{
+    display: flex;
+    flex-direction: column;
+  }
+  .jobDescription{
+    margin-top: 2vh;
+    text-align: justify;
   }
 }
 
@@ -21,4 +31,11 @@
     flex-wrap: wrap;
   }
 
+}
+@media screen and (max-width: 780px) {
+  .experienceList {
+    li {
+      list-style: none;
+    }
+  }
 }
