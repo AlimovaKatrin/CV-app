@@ -6,9 +6,11 @@ import InfoBlock from '../../components/InfoBlock/InfoBlock';
 function WelcomePage ( props ) {
     const circleImages = [ 'avatar.svg', 'javascript-logo.svg', 'welcome.svg' ];
     const [ scrollPosition, setScrollPosition ] = useState(window.pageYOffset);
+    const [hint,setHint] = useState(true);
 
     const scrollHandler = () => {
         setScrollPosition(() => window.pageYOffset);
+        setHint(()=> false)
     };
 
     useEffect(() => {
@@ -18,6 +20,7 @@ function WelcomePage ( props ) {
 
     return (
         <div className={style.welcomeContainer}>
+            {hint && <h1 className={style.hint}>SCROLL <img src='/imgs/down.png'/> </h1>}
             {welcomePage && welcomePage.map(( content, i ) => <InfoBlock
                 key={i}
                 content={content.text}
@@ -25,6 +28,7 @@ function WelcomePage ( props ) {
                 scrollPosition={scrollPosition}
                 imgPath={circleImages[i]}
             />)}
+
         </div>
     );
 };
