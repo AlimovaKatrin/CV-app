@@ -1,23 +1,23 @@
 [
   {
     "name": "VTB",
-    "dateStart": "date start",
-    "dateEnd": "dateEnd",
+    "dateStart": "July 2019",
+    "dateEnd": "December 2019",
     "position": "Frontend Developer",
-    "description": "Accusamus, consequatur delectus dolorum ex non nostrum officia, quaeratione sapiente soluta suscipit totam vero? Ad dolorem minimanecessitatibus, qui saepe tempora tempore velit! Accusamus iste minusofficia tenetur voluptatum."
+    "description": "Angular 2+, Typescript. I was working on a project of internal system for bank employees, my responsibilities were: creating new components,update and support existing code, bugfix"
   },
   {
-    "name": "ne VTB",
-    "dateStart": "date start",
-    "dateEnd": "dateEnd",
-    "position": "Frontend Developer",
-    "description": "Accusamus, consequatur delectus dolorum ex non nostrum officia, quaeratione sapiente soluta suscipit totam vero? Ad dolorem minimanecessitatibus, qui saepe tempora tempore velit! Accusamus iste minusofficia tenetur voluptatum."
+    "name": "Elbrus Coding Bootcamp",
+    "dateStart": "December 2019",
+    "dateEnd": "May 2019",
+    "position": "Fullstack Developer/Mentor",
+    "description": "MERN stack. Teaching and helping students to start their path as a developers. My responsibilities were: teaching 60% of time and developing internal apps 40% of time"
   },
   {
-    "name": "Elbrus",
-    "dateStart": "date start",
-    "dateEnd": "dateEnd",
-    "position": "Frontend Developer",
-    "description": "Accusamus, consequatur delectus dolorum ex non nostrum officia, quaeratione sapiente soluta suscipit totam vero? Ad dolorem minimanecessitatibus, qui saepe tempora tempore velit! Accusamus iste minusofficia tenetur voluptatum."
+    "name": "Elbrus Coding Bootcamp",
+    "dateStart": "May 2019",
+    "dateEnd": "",
+    "position": "Campus Director",
+    "description": "My responsibilities: opening campus in SaintPetersburg, hiring staff , teach staff, creating lections for students, developing of campus and searching for partners"
   }
 ]

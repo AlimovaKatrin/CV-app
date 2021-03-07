@@ -7,14 +7,18 @@ function ExperiencePage ( props ) {
             {experience.map(( el, i ) => <li key={i}>
                 <div className={style.companyCard}>
                     <h1>Company: {el.name}</h1>
-                    <div>
-                        Date start: {el.dateStart}
-                        Date end: {el.dateEnd}
+                    <div className={style.dates}>
+                        <span>
+                            <strong>Date start:</strong> {el.dateStart}
+                        </span>
+                        <span>
+                            <strong>Date end:</strong> {el.dateEnd}
+                        </span>
                     </div>
                     <div>
-                        {el.position}
+                       <strong>Position:</strong> {el.position}
                     </div>
-                    <div>
+                    <div className={style.jobDescription}>
                         {el.description}
                     </div>
                 </div>
