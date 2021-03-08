@@ -1,0 +1,17 @@
+h1 {
+  font-family: 'Bebas Neue', cursive;
+}
+
+.companyCard {
+  font-size: 24px;
+
+  .dates {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .jobDescription {
+    margin-top: 2vh;
+    text-align: justify;
+  }
+}
