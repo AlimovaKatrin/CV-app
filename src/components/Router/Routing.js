@@ -3,6 +3,7 @@ import routes from '../../utils/routes.json';
 import ProjectPage from '../../pages/Projects-page/Project-page';
 import WelcomePage from '../../pages/Welcome-page/Welcome-page';
 import ExperiencePage from '../../pages/Experience-page/Experience-page';
+import ContactPage from '../../pages/Contact-page/Contact-page';
 
 function Routing ( props ) {
     return (
@@ -19,10 +20,8 @@ function Routing ( props ) {
                    <ExperiencePage/>
                 </Route>
                 <Route path={routes.projects.url} component={ProjectPage}/>
-                <Route path={routes.experience.url}>
-                    <p>
-                        nothing too
-                    </p>
+                <Route path={routes.contacts.url}>
+                    <ContactPage/>
                 </Route>
             </Switch>
         </>
