@@ -1,4 +1,4 @@
-import Card from '../Card/Card';
+import Card from '../ProjectCard/Card';
 import style from './List.module.scss';
 
 const List = ( { list } ) => {
