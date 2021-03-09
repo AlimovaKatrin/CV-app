@@ -34,3 +34,47 @@
   }
 
 }
+
+@media only screen and (max-width: 600px) {
+  .one {
+    position: fixed;
+    display: flex;
+    width: 400px;
+    height: 400px;
+    background-color: blue;
+    top: 25vh;
+    right: 0;
+  }
+
+  .two {
+    position: fixed;
+    display: flex;
+    width: 400px;
+    height: 400px;
+    background-color: tan;
+    top: 25vh;
+    right: 0;
+  }
+
+  .three {
+    position: fixed;
+    display: flex;
+    width: 400px;
+    height: 400px;
+    background-color: tomato;
+    top: 25vh;
+    right: 0;
+  }
+
+  .wraper {
+    display: flex;
+    flex-direction: column;
+    pointer-events: none;
+
+    .fakeElem {
+      width: 5vw;
+      height: 20vh;
+    }
+  }
+
+}

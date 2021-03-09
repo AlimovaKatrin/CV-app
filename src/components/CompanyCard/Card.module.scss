@@ -1,17 +1,18 @@
 h1 {
   font-family: 'Bebas Neue', cursive;
 }
+@media only screen and (min-width: 600px) {
+  .companyCard {
+    font-size: 24px;
 
-.companyCard {
-  font-size: 24px;
+    .dates {
+      display: flex;
+      flex-direction: column;
+    }
 
-  .dates {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .jobDescription {
-    margin-top: 2vh;
-    text-align: justify;
+    .jobDescription {
+      margin-top: 2vh;
+      text-align: justify;
+    }
   }
 }
