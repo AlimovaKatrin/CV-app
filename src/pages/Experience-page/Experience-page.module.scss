@@ -6,16 +6,16 @@
     flex-direction: column;
     flex-wrap: wrap;
   }
-  li {
-    list-style: url("briefcase.svg");
-    margin-right: 4vw;
+  div {
+    //list-style: url("briefcase.svg");
+    margin-right: 2vw;
   }
 }
 
 @media screen and (max-width: 1070px) {
   .experienceList {
-    li {
-      list-style: none;
+    div {
+      //list-style: none;
 
     }
   }

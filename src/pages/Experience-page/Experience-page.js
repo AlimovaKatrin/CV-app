@@ -5,9 +5,9 @@ import Card from '../../components/CompanyCard/Card';
 function ExperiencePage ( props ) {
     return (
         <div className={style.experienceList}>
-            {experience.map(( el, i ) => <li key={i}>
+            {experience.map(( el, i ) => <div key={i}>
                 <Card job={el}/>
-            </li>)}
+            </div>)}
         </div>
     );
 }
