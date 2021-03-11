@@ -6,7 +6,6 @@ function ContactPage ( props ) {
     return (
         <>
             <div className={style.contactContainer}>
-               <Form/>
                 <div className={style.linksblock}>
                     <div>
                         code related profiles
@@ -15,6 +14,7 @@ function ContactPage ( props ) {
                         social profiles
                     </div>
                 </div>
+                <Form/>
             </div>
         </>
     );

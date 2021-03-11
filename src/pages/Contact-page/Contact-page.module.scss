@@ -1,10 +1,24 @@
-.contactContainer{
-  width: 80vw;
-  display: flex;
-}
+@media screen and (min-width: 1070px) {
+  .contactContainer {
+    width: 80vw;
+    display: flex;
+  }
 
-.linksblock{
-  flex-grow: 1;
-  display: flex;
-  justify-content: space-between;
-}
+  .linksblock {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+  }
+};
+
+@media screen and (max-width: 1070px) {
+  .contactContainer {
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+  }
+  .linksblock {
+    display: flex;
+    flex-direction: column;
+  }
+};

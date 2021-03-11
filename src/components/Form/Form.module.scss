@@ -1,0 +1,16 @@
+.contactForm {
+  padding: 1vw;
+  display: flex;
+  flex-direction: column;
+  background-color: #ec9586;
+  border-radius: 15px;
+
+  .field {
+    margin: 5px;
+  }
+
+  button {
+    max-width: 50%;
+    align-self: center;
+  }
+}
