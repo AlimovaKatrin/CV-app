@@ -1,11 +1,11 @@
-import React from 'react';
+import style from './Form.module.scss';
 
 function Form ( props ) {
     return (
-        <form>
-            <input/>
-            <input/>
-            <button>Send</button>
+        <form className={style.contactForm}>
+            <input className={style.field}/>
+            <textarea className={style.field}/>
+            <button type='submit'>Send</button>
         </form>
     );
 }
