@@ -1,13 +1,11 @@
 import style from './Experience-page.module.scss';
-import experience from '../../utils/experience.json';
-import Card from '../../components/CompanyCard/Card';
+import { experienceContent } from '../../utils/content.json';
+import List from '../../components/List/List';
 
 function ExperiencePage ( props ) {
     return (
         <div className={style.experienceList}>
-            {experience.map(( el, i ) => <div key={i}>
-                <Card job={el}/>
-            </div>)}
+            <List list={experienceContent} experience={true}/>
         </div>
     );
 }

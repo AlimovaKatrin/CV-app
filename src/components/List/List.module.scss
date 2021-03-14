@@ -3,38 +3,12 @@
     width: 80vw;
     margin: 3vh auto 3vh auto;
     display: flex;
-
-    div {
-      font-size: 20px;
-      flex-basis: 30%;
-      transition: all 1s ease-in-out;
-
-      img {
-        display: block;
-        margin: auto;
-      }
-    }
-
-    div:hover {
-      background-color: #e8cbc7;
-      transform: scale(1.1);
-    }
   }
 }
 
 @media screen and (max-width: 780px) {
-  img {
-    display: none;
-  }
-
   .container {
-
     display: flex;
     flex-direction: column;
-
-    div {
-      flex-basis: 25%;
-      transition: all 0.8s ease-in-out;
-    }
   }
 }

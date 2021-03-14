@@ -1,12 +1,13 @@
-import Card from '../ProjectCard/Card';
+import ProjectCard from '../cards/ProjectCard/Card';
 import style from './List.module.scss';
+import CompanyCard from '../cards/CompanyCard/Card';
 
-const List = ( { list } ) => {
-
+const List = ( props ) => {
     return (
         <>
             <div className={style.container}>
-                {list.map(( el, i ) => <Card key={i} elem={el}/>)}
+                {props.experience && props.list.map(( el, i ) => <CompanyCard job={el}/>)}
+                {props.projects && props.list.map(( el, i ) => <ProjectCard key={i} elem={el}/>)}
             </div>
         </>
     );

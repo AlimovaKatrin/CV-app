@@ -1,11 +1,11 @@
-import { projectsJSON } from '../../utils/projects.json';
+import { projectsContent } from '../../utils/content.json';
 import List from '../../components/List/List';
 
 const ProjectPage = ( props ) => {
     //add sorting by date of projects
     return (
         <>
-            <List list={projectsJSON}/>
+            <List list={projectsContent} projects={true}/>
         </>
     );
 };
