@@ -57,6 +57,16 @@
       "position": "Campus Director",
       "description": "My responsibilities: opening campus in SaintPetersburg, hiring staff , teach staff, creating lections for students, developing of campus and searching for partners"
     }
-  ]
+  ],
+  "contactContent": {
+    "socialNetworks": [{
+      "name": "LinkedIn",
+      "url": "link"
+    }],
+    "codeNetworks": [{
+      "name": "HackerRank",
+      "url": "link"
+    }]
+  }
 }
 
