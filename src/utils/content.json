@@ -59,14 +59,34 @@
     }
   ],
   "contactContent": {
-    "socialNetworks": [{
-      "name": "LinkedIn",
-      "url": "link"
-    }],
-    "codeNetworks": [{
-      "name": "HackerRank",
-      "url": "link"
-    }]
+    "socialNetworks": [
+      {
+        "name": "LinkedIn",
+        "url": "link"
+      },
+      {
+        "name": "HH.ru",
+        "url": "link"
+      },
+      {
+        "name": "Habr Career",
+        "url": "link"
+      }
+    ],
+    "codeNetworks": [
+      {
+        "name": "HackerRank",
+        "url": "link"
+      },
+      {
+        "name": "CodeWars",
+        "url": "link"
+      },
+      {
+        "name": "StackBlitz",
+        "url": "link"
+      }
+    ]
   }
 }
 
