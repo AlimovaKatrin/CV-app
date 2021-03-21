@@ -27,3 +27,11 @@
     }
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .bubbleContainer{
+    img{
+      display: none;
+    }
+  }
+}

@@ -64,14 +64,14 @@
   }
 
   .wraper {
-    display: flex;
-    flex-direction: column;
-    pointer-events: none;
-
-    .fakeElem {
-      width: 5vw;
-      height: 20vh;
-    }
+    display: none;
+    //flex-direction: column;
+    //pointer-events: none;
+    //
+    //.fakeElem {
+    //  width: 5vw;
+    //  height: 20vh;
+    //}
   }
 
 }
