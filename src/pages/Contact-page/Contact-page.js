@@ -10,15 +10,15 @@ function ContactPage ( props ) {
                     <div className={style.codeList}>
                         <h3>Code related profiles</h3>
                         {contactContent.codeNetworks.map(el => <div>
+                            <img src='imgs/mail.svg'/>
                             <span>{el.name}</span>
-                               <img src='imgs/mail.svg'/>
                         </div>)}
                     </div>
                     <div className={style.socialNetworks}>
                         <h3>Social profiles</h3>
                         {contactContent.socialNetworks.map(el => <div>
-                            <span>{el.name}</span>
                             <img src='imgs/chrome.svg'/>
+                            <span>{el.name}</span>
                         </div>)}
                     </div>
                 </div>
